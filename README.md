@@ -9,4 +9,24 @@ Vision-and-Language Navigation (VLN) tasks mainly evaluate agents based on one-t
 
 
 
-The code and dataset is coming soon!!!
+#### Step 1: follow [DUET](https://github.com/cshizhe/VLN-DUET/tree/main) to install the Matterport3D Simulator and download the required data
+
+#### Step 2: download the preprocessed features and connectivity graphs from [ScaleVLN](https://github.com/wz0919/ScaleVLN)
+
+#### Step 4: download the GSA-R2R dataset from [here](https://drive.google.com/file/d/12PoK6zO5HflCLen6SBSLQUpU9gEhZ602/view?usp=sharing)
+
+#### Step 3: run the pretraining code with full ground-truth navigation graph
+
+```
+cd GR-DUET
+cd pretrain_src
+bash run_r2r.sh
+```
+
+#### Step 4: finetune and evaluate the model
+
+```
+cd map_nav_src
+bash scripts/run_gsa_r2r.sh
+```
+
