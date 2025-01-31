@@ -7,15 +7,19 @@ Vision-and-Language Navigation (VLN) tasks mainly evaluate agents based on one-t
 
 ![model_arch](figures/teaser.png)
 
+## Implementation Steps
 
+### Step 1
+Follow [DUET](https://github.com/cshizhe/VLN-DUET/tree/main) to install the Matterport3D Simulator and download the required data
 
-#### Step 1: follow [DUET](https://github.com/cshizhe/VLN-DUET/tree/main) to install the Matterport3D Simulator and download the required data
+### Step 2
+Download the preprocessed features and connectivity graphs from [ScaleVLN](https://github.com/wz0919/ScaleVLN)
 
-#### Step 2: download the preprocessed features and connectivity graphs from [ScaleVLN](https://github.com/wz0919/ScaleVLN)
+### Step 3
+Download the instructions of GSA-R2R dataset from [here](https://drive.google.com/file/d/12PoK6zO5HflCLen6SBSLQUpU9gEhZ602/view?usp=sharing)
 
-#### Step 4: download the GSA-R2R dataset from [here](https://drive.google.com/file/d/12PoK6zO5HflCLen6SBSLQUpU9gEhZ602/view?usp=sharing)
-
-#### Step 3: run the pretraining code with full ground-truth navigation graph
+### Step 4
+Run the pretraining code with the ground-truth navigation graph
 
 ```
 cd GR-DUET
@@ -23,10 +27,24 @@ cd pretrain_src
 bash run_r2r.sh
 ```
 
-#### Step 4: finetune and evaluate the model
+### Step 5
+Finetune and evaluate the model
 
 ```
 cd map_nav_src
 bash scripts/run_gsa_r2r.sh
+```
+
+## Citation
+
+If you find this work helpful, please consider citing:
+
+```bibtex
+@article{hong2025general,
+  title={General Scene Adaptation for Vision-and-Language Navigation},
+  author={Hong, Haodong and Qiao, Yanyuan and Wang, Sen and Liu, Jiajun and Wu, Qi},
+  journal={arXiv preprint arXiv:2501.17403},
+  year={2025}
+}
 ```
 
