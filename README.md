@@ -27,7 +27,10 @@ cd pretrain_src
 bash run_r2r.sh
 ```
 
+**Note**: The pretraining requires a `pano_inputs.h5` file which we save all the inputs to speed up the training. You can either run the `get_pano_inputs.py` to generate it or download it from [here](https://drive.google.com/file/d/1Za6E7-Pl3P-uPAVThmdoQQpbszqVQ_A1/view?usp=sharing).
+
 ### Step 5
+
 Finetune and evaluate the model
 
 ```
@@ -40,11 +43,11 @@ bash scripts/run_gsa_r2r.sh
 If you find this work helpful, please consider citing:
 
 ```bibtex
-@article{hong2025general,
-  title={General Scene Adaptation for Vision-and-Language Navigation},
-  author={Hong, Haodong and Qiao, Yanyuan and Wang, Sen and Liu, Jiajun and Wu, Qi},
-  journal={arXiv preprint arXiv:2501.17403},
-  year={2025}
+@inproceedings{hong2025general,
+	title={General Scene Adaptation for Vision-and-Language Navigation},
+	author={Haodong Hong and Yanyuan Qiao and Sen Wang and Jiajun Liu and Qi Wu},
+	booktitle={The Thirteenth International Conference on Learning Representations},
+	year={2025}
 }
 ```
 
