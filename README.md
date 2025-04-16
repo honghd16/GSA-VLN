@@ -16,7 +16,7 @@ Follow [DUET](https://github.com/cshizhe/VLN-DUET/tree/main) to install the Matt
 Download the preprocessed features and connectivity graphs from [ScaleVLN](https://github.com/wz0919/ScaleVLN)
 
 ### Step 3
-Download the instructions of GSA-R2R dataset from [here](https://drive.google.com/file/d/12PoK6zO5HflCLen6SBSLQUpU9gEhZ602/view?usp=sharing)
+Download the instructions of GSA-R2R dataset from [here](https://drive.google.com/file/d/1uBR4F1FD3B6bTdXX17SOFYZRxvQhvYB9/view?usp=sharing)
 
 [optional] Download the [pretrained](https://drive.google.com/file/d/1ZxS4h725lt2U2-Oe7Xn_5y3k9nq9nYRH/view?usp=sharing) and [fine-tuned](https://drive.google.com/file/d/1-1tHc3-lfgn8BZuhJj2h6R45YIAog159/view?usp=sharing) checkpoints for GSA-R2R.
 
